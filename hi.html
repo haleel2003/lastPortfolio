@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+        <input type="text" name="name" id="name">
+        <input type="number" name="number" id="number">
+        <button>Submit</button>
+    </form>
+    <script>
+        const name=document.getElementById('name');
+        const number=document.getElementById('number');
+        const btn=document.querySelector('button');
+        btn.addEventListener('click',function{
+            // e.preventDefault();
+            console.log('clicked')
+            if(name.value===''){
+                alert('Enter anything')
+            }
+            else if(number.value===''){
+                alert('enter anything')
+            }   
+            
+        })
+    </script>
+  </body>
+  </html>
